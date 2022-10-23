@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\lugareController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('lugare/{lugare}', [lugareController::class, 'lugare'])->name('lugare');
+
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
