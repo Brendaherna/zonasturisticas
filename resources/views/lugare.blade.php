@@ -1,4 +1,4 @@
-tends('layout.master')
+@extends('layout.master')
 @section('titulo', $lugare->nombre)
 @section('cabecera')
     <section class="inner-banner-wrap">
@@ -138,9 +138,6 @@ tends('layout.master')
                                         {!! $lugare->descripcion !!}
                                     </div>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>

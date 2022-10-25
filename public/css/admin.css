@@ -49,7 +49,7 @@
     line-height: 32px;
     margin-left: 5px;
     margin-top: 10px;
-    color: #693BCC;
+    color: #40cc3b;
     transition:all 0.2s ease-in;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .voyager .side-menu.sidebar-inverse .navbar li>a:hover, .voyager .side-menu.sidebar-inverse .navbar li.active>a {
-    color: #693BCC;
+    color: #40cc3b;
     background: #ffffff;
     font-weight:bold;
 }
@@ -74,7 +74,7 @@
     top:25px;
     content:'';
     display:block;
-    background:#693BCC;
+    background:#40cc3b;
     transition:all 0.1s ease-in;
 }
 
@@ -90,8 +90,8 @@
 }
 
 .app-container .content-container .side-menu .navbar-nav li a:hover .icon, .app-container .content-container .side-menu .navbar-nav li.active a .icon{
-    background:#693BCC;
-    border-color:#693BCC;
+    background:#40cc3b;
+    border-color:#40cc3b;
     color:#fff;
     margin-left:5px;
 }
