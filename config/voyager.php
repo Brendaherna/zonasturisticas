@@ -13,7 +13,7 @@ return [
     'user' => [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
-        'default_avatar'               => 'default.png',
+        'default_avatar'               => 'users/default.png',
         'redirect'                     => '/admin',
     ],
 
@@ -55,7 +55,7 @@ return [
     */
 
     'storage' => [
-        'disk' => 'public',
+        'disk' => env('FILESYSTEM_DRIVER', 'public'),
     ],
 
     /*
@@ -181,7 +181,7 @@ return [
     |
     */
 
-    'primary_color' => '#40cc3b',
+    'primary_color' => '#800000',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 
@@ -224,13 +224,15 @@ return [
     'media' => [
         // The allowed mimetypes to be uploaded through the media-manager.
         // 'allowed_mimetypes' => '*', //All types can be uploaded
+         /*
         'allowed_mimetypes' => [
           'image/jpeg',
           'image/png',
           'image/gif',
           'image/bmp',
           'video/mp4',
-        ],
+        ],*/
+
         //Path for media-manager. Relative to the filesystem.
         'path'                => '/',
         'show_folders'        => true,
