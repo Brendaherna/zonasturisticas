@@ -10,9 +10,9 @@ return [
     |
     */
 
-    'user' => [
+    'users' => [
         'add_default_role_on_register' => true,
-        'default_role'                 => 'user',
+        'default_role'                 => 'users',
         'default_avatar'               => 'default.png',
         'redirect'                     => '/admin',
     ],
