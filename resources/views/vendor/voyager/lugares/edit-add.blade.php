@@ -9,12 +9,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @stop
 
-@section('page_title', __('Añadir lugar'.($edit ? '' : '')).' '.$dataType->getTranslatedAttribute(''))
+@section('page_title', __('Añadir lugares'.($edit ? '' : '')).' '.$dataType->getTranslatedAttribute(''))
 
 @section('page_header')
     <h1 class="page-title">
         <i class="{{ $dataType->icon }}"></i>
-        {{ __('Añadir lugar'.($edit ? '' : '')).' '.$dataType->getTranslatedAttribute('') }}
+        {{ __('Añadir lugares'.($edit ? '' : '')).' '.$dataType->getTranslatedAttribute('') }}
     </h1>
     @include('voyager::multilingual.language-selector')
 @stop
